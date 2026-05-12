@@ -1,0 +1,222 @@
+:root {
+  --bg: #020202;
+  --terminal-bg: #050505;
+  --terminal-border: #262626;
+  --text: #e5e5e5;
+  --text-muted: #9ca3af;
+  --accent: #22c55e; /* green-ish, terminal style */
+  --link: #38bdf8;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  background: radial-gradient(circle at top, #111 0, #020202 45%);
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  min-height: 100vh;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 24px 16px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Terminal window */
+
+.terminal {
+  border-radius: 10px;
+  border: 1px solid var(--terminal-border);
+  background: var(--terminal-bg);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+  overflow: hidden;
+}
+
+.terminal-bar {
+  height: 32px;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  background: #050608;
+  border-bottom: 1px solid #18181b;
+}
+
+.dots {
+  display: flex;
+  gap: 6px;
+  margin-right: 8px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+}
+
+.dot-red {
+  background: #f87171;
+}
+
+.dot-yellow {
+  background: #facc15;
+}
+
+.dot-green {
+  background: #4ade80;
+}
+
+.terminal-title {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+/* Terminal body */
+
+.terminal-body {
+  padding: 14px 14px 18px;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.line {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.spacer {
+  margin: 8px 0;
+}
+
+.prompt {
+  color: var(--accent);
+}
+
+.command {
+  color: var(--text);
+}
+
+.line-output {
+  padding-left: 22px;
+  color: var(--text-muted);
+}
+
+/* Blocks (sections) */
+
+.block {
+  margin: 6px 0 10px;
+  padding-left: 22px;
+  color: var(--text-muted);
+}
+
+.block p {
+  margin: 2px 0 6px;
+}
+
+.block ul {
+  margin: 2px 0 6px;
+  padding-left: 18px;
+}
+
+.block li {
+  margin-bottom: 2px;
+}
+
+/* Projects styling */
+
+.project-title {
+  color: var(--text);
+  margin-bottom: 2px;
+}
+
+.project-desc {
+  font-size: 0.86rem;
+}
+
+.project-link {
+  font-size: 0.86rem;
+}
+
+/* Links */
+
+a {
+  color: var(--link);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Anchor spacing (so href jumps look nice) */
+
+.anchor {
+  position: relative;
+  top: -60px;
+}
+
+/* Cursor */
+
+.cursor {
+  display: inline-block;
+  width: 8px;
+  height: 1.1em;
+  background: var(--text);
+  animation: blink 1s step-start infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+/* Scroll animations */
+
+.fade-on-scroll {
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity 0.4s ease-out, transform 0.4s ease-out;
+}
+
+.fade-on-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Key style bits */
+
+.key {
+  color: var(--accent);
+}
+
+/* Footer */
+
+.footer {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  text-align: left;
+  padding-left: 4px;
+}
+
+/* Responsive */
+
+@media (max-width: 640px) {
+  .terminal-body {
+    font-size: 0.85rem;
+  }
+
+  .line {
+    flex-wrap: wrap;
+  }
+}
