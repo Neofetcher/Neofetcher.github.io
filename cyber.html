@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>devansh@cyber-portfolio:~$</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page">
+
+    <div class="terminal">
+      <div class="terminal-bar">
+        <div class="dots">
+          <span class="dot dot-red"></span>
+          <span class="dot dot-yellow"></span>
+          <span class="dot dot-green"></span>
+        </div>
+        <div class="terminal-title">devansh@cyber-portfolio: ~</div>
+        <nav class="top-nav-links">
+          <a href="index.html">cloud/devsecops</a>
+          <a href="cyber.html">cybersecurity/pentesting</a>
+        </nav>
+      </div>
+
+      <div class="terminal-body">
+        <h1 class="visually-hidden">
+          Devansh Pratap Singh – Cybersecurity, Penetration Testing & SOC Portfolio
+        </h1>
+
+        <!-- Intro -->
+        <div class="line">
+          <span class="prompt">devansh@cyber-portfolio:~$</span>
+          <span class="command">whoami</span>
+        </div>
+        <div class="line line-output">
+          Devansh Pratap Singh — Cybersecurity-focused Engineer (Pentesting, AD Exploitation, SOC/SIEM)
+        </div>
+
+        <div class="line spacer"></div>
+
+        <!-- Help / menu -->
+        <div class="line">
+          <span class="prompt">devansh@cyber-portfolio:~$</span>
+          <span class="command">help</span>
+        </div>
+        <div class="line line-output">
+          Available sections: about, focus, labs, projects, contact
+        </div>
+        <div class="line line-output">
+          Use scroll or jump: <a href="#about">about</a> · <a href="#focus">focus</a> ·
+          <a href="#labs">labs</a> · <a href="#projects">projects</a> · <a href="#contact">contact</a>
+        </div>
+
+        <div class="line spacer"></div>
+
+        <!-- ABOUT -->
+        <div class="anchor" id="about"></div>
+        <h2 class="visually-hidden">About – Cybersecurity</h2>
+        <div class="line">
+          <span class="prompt">devansh@cyber-portfolio:~$</span>
+          <span class="command">cat cyber.txt</span>
+        </div>
+        <div class="block fade-on-scroll">
+          <p>
+            Cybersecurity and cloud-focused graduate with hands-on experience in penetration testing,
+            Active Directory exploitation, SIEM-based threat detection, and AWS cloud security.
+          </p>
+          <p>
+            Strong foundation in infrastructure &amp; networking, secure system design, and real-world
+            attack simulation labs across Windows and Linux environments.
+          </p>
+          <p>
+            I enjoy working close to the system: enumerating, exploiting, escalating privileges,
+            and then mapping out mitigations to make the environment harder to break again.
+          </p>
+        </div>
+
+        <div class="line spacer"></div>
+
+        <!-- FOCUS -->
+        <div class="anchor" id="focus"></div>
+        <h2 class="visually-hidden">Offensive & Defensive Security Focus</h2>
+        <div class="line">
+          <span class="prompt">devansh@cyber-portfolio:~$</span>
+          <span class="command">ls focus</span>
+        </div>
+        <div class="block fade-on-scroll">
+          <ul>
+            <li><span class="key">pentesting/ad/</span> — internal attack simulations, AD abuse, privilege escalation.</li>
+            <li><span class="key">soc-siem/</span> — log analysis, alert triage, threat detection with Elastic.</li>
+            <li><span class="key">labs/</span> — vulnerable machines, exploit chains, and written reports.</li>
+          </ul>
+        </div>
+
+        <div class="line spacer"></div>
+
+        <!-- LABS / TRYHACKME -->
+        <div class="anchor" id="labs"></div>
+        <h2 class="visually-hidden">Hands-on Labs & TryHackMe</h2>
+        <div class="line">
+          <span class="prompt">devansh@cyber-portfolio:~$</span>
+          <span class="command">ls labs</span>
+        </div>
+        <div class="block fade-on-scroll">
+          <p>Hands-on platforms and labs used to sharpen practical skills:</p>
+          <ul>
+            <li>Offensive labs: Windows &amp; Active Directory exploitation, privilege escalation, post-exploitation.</li>
+            <li>Defensive labs: log analysis, SIEM alerting, basic detection engineering.</li>
+            <li>Cloud labs: securing services and networks mirroring real-world AWS setups.</li>
+          </ul>
+          <p>
+            TryHackMe profile:
+            <a href="https://tryhackme.com/p/N30fetcher" target="_blank">https://tryhackme.com/p/N30fetcher</a>
+          </p>
+        </div>
+
+        <div class="line spacer"></div>
+
+        <!-- PROJECTS -->
+        <div class="anchor" id="projects"></div>
+        <h2 class="visually-hidden">Cybersecurity Projects</h2>
+        <div class="line">
+          <span class="prompt">devansh@cyber-portfolio:~$</span>
+          <span class="command">ls projects</span>
+        </div>
+
+        <div class="block fade-on-scroll">
+          <p class="project-title">Vulnerable Machine Exploitation Labs/</p>
+          <p class="project-desc">
+            Exploited intentionally vulnerable machines to simulate real-world attack scenarios
+            (enumeration, scanning, exploitation, post-exploitation) with structured penetration test reports.
+          </p>
+          <p class="project-link">
+            ↳ <a href="https://github.com/Neofetcher/Vulnerable-Machine-Exploitation-Labs" target="_blank">
+              Vulnerable Machine Exploitation Labs – GitHub repository
+            </a>
+          </p>
+        </div>
+
+        <div class="block fade-on-scroll">
+          <p class="project-title">Active Directory Lab Environment/</p>
+          <p class="project-desc">
+            Virtualized AD lab mimicking a Windows-based domain with Domain Controller and clients,
+            used for administration practice, security hardening, and attack simulation.
+          </p>
+          <p class="project-link">
+            ↳ <a href="https://github.com/Neofetcher/Active-Directory-AD-Lab-Environment" target="_blank">
+              Active Directory AD Lab Environment – GitHub repository
+            </a>
+          </p>
+        </div>
+
+        <div class="block fade-on-scroll">
+          <p class="project-title">Active Directory Lab Exploitation/</p>
+          <p class="project-desc">
+            Simulated internal penetration tests against a vulnerable AD environment, achieving domain admin via
+            privilege escalation and token impersonation, with documented attack chains and mitigations.
+          </p>
+          <p class="project-link">
+            ↳ <a href="https://github.com/Neofetcher/Active-Directory-Lab-Exploitation" target="_blank">
+              Active Directory Lab Exploitation – GitHub repository
+            </a>
+          </p>
+        </div>
+
+        <div class="block fade-on-scroll">
+          <p class="project-title">Python Keylogger/</p>
+          <p class="project-desc">
+            Educational keylogger to study endpoint monitoring and attacker tooling, capturing keystrokes,
+            clipboard data, and system information in a controlled lab environment.
+          </p>
+          <p class="project-link">
+            ↳ <a href="https://github.com/Neofetcher/Python-Keylogger" target="_blank">
+              Python Keylogger – GitHub repository
+            </a>
+          </p>
+        </div>
+
+        <div class="line spacer"></div>
+
+        <!-- CONTACT -->
+        <div class="anchor" id="contact"></div>
+        <h2 class="visually-hidden">Contact – Cybersecurity Roles</h2>
+        <div class="line">
+          <span class="prompt">devansh@cyber-portfolio:~$</span>
+          <span class="command">cat contact.txt</span>
+        </div>
+        <div class="block fade-on-scroll">
+          <p>Email: <a href="mailto:reachmedevansh@gmail.com">Reach Devansh</a></p>
+          <p>GitHub: <a href="https://github.com/Neofetcher" target="_blank">@Neofetcher</a></p>
+          <p>Cloud / DevSecOps page: <a href="index.html">cloud/devsecops page</a></p>
+          <p>LinkedIn:
+            <a href="https://www.linkedin.com/in/reachmedevansh/" target="_blank">
+              Computer Engineer | Cybersecurity &amp; Cloud | Pentesting · SOC · AWS Security
+            </a>
+          </p>
+          <p>TryHackMe:
+            <a href="https://tryhackme.com/p/N30fetcher" target="_blank">N30fetcher</a>
+          </p>
+        </div>
+
+        <div class="line spacer"></div>
+
+        <!-- Prompt footer -->
+        <div class="line">
+          <span class="prompt">devansh@cyber-portfolio:~$</span>
+          <span class="cursor"></span>
+        </div>
+
+      </div>
+    </div>
+
+    <footer class="footer">
+      © 2026 · Devansh Pratap Singh · Cybersecurity
+    </footer>
+  </div>
+
+  <script>
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+          }
+        });
+      },
+      { threshold: 0.2 }
+    );
+
+    document.querySelectorAll('.fade-on-scroll').forEach((el) => observer.observe(el));
+  </script>
+</body>
+</html>
