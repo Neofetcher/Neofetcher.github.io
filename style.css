@@ -4,7 +4,7 @@
   --terminal-border: #262626;
   --text: #e5e5e5;
   --text-muted: #9ca3af;
-  --accent: #22c55e; /* green-ish, terminal style */
+  --accent: #22c55e;
   --link: #38bdf8;
 }
 
@@ -16,7 +16,8 @@
 
 body {
   margin: 0;
-  font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
   background: radial-gradient(circle at top, #111 0, #020202 45%);
   color: var(--text);
   -webkit-font-smoothing: antialiased;
@@ -78,6 +79,24 @@ body {
 .terminal-title {
   font-size: 0.8rem;
   color: var(--text-muted);
+}
+
+/* Top nav links inside bar */
+
+.top-nav-links {
+  margin-left: auto;
+  display: flex;
+  gap: 10px;
+}
+
+.top-nav-links a {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  text-decoration: none;
+}
+
+.top-nav-links a:hover {
+  color: var(--text);
 }
 
 /* Terminal body */
@@ -158,7 +177,7 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Anchor spacing (so href jumps look nice) */
+/* Anchor spacing */
 
 .anchor {
   position: relative;
@@ -194,10 +213,24 @@ a:hover {
   transform: translateY(0);
 }
 
-/* Key style bits */
+/* Visual key */
 
 .key {
   color: var(--accent);
+}
+
+/* Visually hidden headings (for SEO) */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 
 /* Footer */
@@ -218,5 +251,9 @@ a:hover {
 
   .line {
     flex-wrap: wrap;
+  }
+
+  .top-nav-links {
+    gap: 6px;
   }
 }
